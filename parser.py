@@ -74,7 +74,7 @@ def parse_plain_text(body: str) -> dict:
 
 
 def parse_html(html_body: str) -> dict:
-    soup = BeautifulSoup(html_body, "lxml")
+    soup = BeautifulSoup(html_body, "html.parser")
     text = soup.get_text(separator="\n")
     return parse_plain_text(text)
 
