@@ -6,8 +6,8 @@ from datetime import datetime
 from typing import Generator
 
 CONNECT_TIMEOUT = 30   # seconds to establish connection
-FETCH_TIMEOUT   = 60   # seconds to wait for a single FETCH response
-BATCH_SIZE      = 50   # emails fetched per IMAP FETCH command
+FETCH_TIMEOUT   = 120  # seconds to wait for a single FETCH response
+BATCH_SIZE      = 200  # emails fetched per IMAP FETCH command
 
 
 def _decode_header_value(value: str) -> str:
