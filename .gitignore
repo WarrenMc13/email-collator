@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.xlsx
+*.csv
+property24_enquiries.html
+.venv/
+venv/
